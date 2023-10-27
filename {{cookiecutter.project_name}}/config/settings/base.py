@@ -12,12 +12,11 @@ DEBUG = False
 ALLOWED_HOSTS = []
 
 LOCAL_APPS = [
-    "apps.web.apps.WebConfig",
     "apps.api.apps.ApiConfig",
 ]
 
 THIRD_PARTY_APPS = [
-    'rest_framework',
+    "rest_framework",
     "corsheaders",
 ]
 
@@ -68,11 +67,11 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": env_vars.get("db_engine"),
-        'NAME': env_vars.get("db_name"),
-        'USER': env_vars.get("db_user"),
-        'PASSWORD': env_vars.get("db_password"),
-        'HOST': env_vars.get("db_host"),
-        'PORT': env_vars.get("db_port")
+        "NAME": env_vars.get("db_name"),
+        "USER": env_vars.get("db_user"),
+        "PASSWORD": env_vars.get("db_password"),
+        "HOST": env_vars.get("db_host"),
+        "PORT": env_vars.get("db_port"),
     }
 }
 
